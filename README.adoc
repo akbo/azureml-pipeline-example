@@ -1,0 +1,36 @@
+= Azure ML Pipeline Example
+
+This repository contains example code for using Azure Machine Learning Pipelines:
+
+* How to define them
+* How to publish and update them
+* How to trigger them via their REST endpoints
+* How to schedule them
+
+== How to use the example code
+
+. Change `.azureml/config.json` so it points to your Azure ML workspace.
+. Create and activate the conda environment on your machine: From within the repo directory, first run
++
+[source, sh]
+....
+$ conda env create
+....
+then run
++
+[source, sh]
+....
+$ conda activate azure_ml_pipeline_example
+....
+. Have a Service Principal (= technical user) created and put its details in `config.py`. For more info on authentication in Azure ML, see https://docs.microsoft.com/en-us/azure/machine-learning/how-to-setup-authentication[this site].
+. Now that the environment is set up, you can run
++
+[source, sh]
+....
+$ python azure_ml_pipeline_example.py
+....
+
+== Further Reading
+
+* https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-your-first-pipeline[Introductory Article about Azure ML pipelines]
+* https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/machine-learning-pipelines[Example Notebooks]

@@ -1,0 +1,12 @@
+name: azure_ml_pipeline_example
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8.2
+  - pylint
+  - invoke
+  - black
+  - pip
+  - pip:
+      - azureml-sdk
